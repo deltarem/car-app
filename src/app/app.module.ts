@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarListComponent } from './car-list/car-list.component';
 import { MatModulesModule } from './mat-modules.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarListComponent
+    CarListComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
