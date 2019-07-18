@@ -12,7 +12,8 @@ export class CarListComponent implements OnInit {
   vehicleList: Vehicle[];
   vehicleDetailList: VehicleDetails[];
   vehicleCardList: VehicleCard[];
-  constructor(   private carListService: CarListService
+  constructor(
+     private carListService: CarListService
     ) { }
 
   ngOnInit() {

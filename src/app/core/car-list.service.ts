@@ -8,14 +8,14 @@ import { Vehicle, VehicleDetails } from './car-list.models';
   providedIn: 'root'
 })
 export class CarListService {
-  vehicleApiUrl = 'https://itg-prd-recruit.appspot.com/api/vehicles/';
-
+  vehiclesApiUrl = 'https://itg-prd-recruit.appspot.com/api/vehicles/';
+  vehicleApiUrl = 'https://itg-prd-recruit.appspot.com/api/vehicle/';
 
   constructor( private http: HttpClient
     ) { }
 
   getVehicleList(): Observable<Vehicle[]> {
-    return this.http.get<Vehicle[]>(this.vehicleApiUrl)
+    return this.http.get<Vehicle[]>(this.vehiclesApiUrl)
       .pipe(
         catchError(this.handleError)
       );
