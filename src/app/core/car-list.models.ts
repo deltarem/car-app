@@ -38,4 +38,5 @@ export interface VehicleCard {
   description: string;
   price: string;
   meta: Meta;
+  imageUrl: string;
 }

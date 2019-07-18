@@ -1,1 +1,12 @@
-<p>vehicleCardList : {{vehicleCardList | json }}</p>
+<div fxFlexFill  fxLayout="row" fxLayoutGap="20px grid">
+  <mat-card *ngFor="let item of vehicleCardList; let i = index">
+    <img mat-card-image src="{{item.imageUrl}}" alt="image">
+    <mat-card-content>
+      <h1>{{item.id }} {{item.modelYear}} </h1>
+      <h2>From {{item.price}}</h2>
+      <p>{{item.description}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+

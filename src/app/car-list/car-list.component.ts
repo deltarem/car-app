@@ -18,6 +18,7 @@ export class CarListComponent implements OnInit {
 
   ngOnInit() {
     this.getVehicleList();
+
   }
 
   getVehicleList() {
@@ -46,11 +47,12 @@ export class CarListComponent implements OnInit {
           this.vehicleCardList.push({
             id: data.id,
             modelYear: item.modelYear,
-            url: item.url,
+            url: item.url ,
             media: item.media,
             description: data.description,
             price: data.price,
-            meta: data.meta
+            meta: data.meta,
+            imageUrl: './assets'.concat(item.media[0].url)
           });
 
         },
