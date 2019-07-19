@@ -1,0 +1,35 @@
+
+.container {
+  height:1000px;
+  padding: 20px;
+}
+.main-div {
+  height: 90%;
+  width:100%;
+  text-align: center;
+}
+
+.car-card {
+  max-width: 400px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height:2241px;
+    padding: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 800px) and (min-width: 600px)  {
+  .container {
+    height:100%;
+    padding: 20px;
+  }
+
+   .car-card {
+    width: 250px;
+    margin: 5px;
+  }
+}

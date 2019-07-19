@@ -1,12 +1,14 @@
-<div fxFlexFill  fxLayout="row" fxLayoutGap="20px grid">
-  <mat-card *ngFor="let item of vehicleCardList; let i = index">
-    <img mat-card-image src="{{item.imageUrl}}" alt="image">
-    <mat-card-content>
-      <h1>{{item.id }} {{item.modelYear}} </h1>
-      <h2>From {{item.price}}</h2>
-      <p>{{item.description}}</p>
-    </mat-card-content>
-  </mat-card>
+<div class="container" fxLayout="column" fxLayoutGap="20px">
+  <div class="main-div" fxLayout="row" fxLayoutAlign="center center">
+    <div fxLayout="row" fxLayout.lt-md="row wrap"  fxLayout.lt-sm="column" fxLayoutGap="20px">
+      <mat-card  class="car-card" *ngFor="let item of vehicleCardList; let i = index">
+        <img mat-card-image src="{{item.imageUrl}}" alt="image">
+        <mat-card-content>
+          <h1>{{item.id }} {{item.modelYear}} </h1>
+          <h2>From {{item.price}}</h2>
+          <p>{{item.description}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
 </div>
-
-
