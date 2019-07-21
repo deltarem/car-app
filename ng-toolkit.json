@@ -1,0 +1,13 @@
+{
+  "serverless": {
+    "provider": "aws",
+    "project": "car-app",
+    "skipInstall": false,
+    "directory": ".",
+    "clientProject": "car-app",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}
